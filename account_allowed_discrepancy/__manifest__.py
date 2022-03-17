@@ -1,7 +1,7 @@
 {
     'name': 'Account Allowed Discrepancy',
     'version': '1.0',
-    'depends': ['account'],
+    'depends': ['account', 'purchase'],
     'author': 'Muhammad Alfalah Madukubah',
     'description': """
         allowed_discrepancy Allowed Discrepancy

@@ -1,7 +1,7 @@
 {
     'name': 'Sale Total Amount Grouping',
     'version': '1.0',
-    'depends': ['sale', 'stock'],
+    'depends': ['sale', 'sale_management', 'stock'],
     'author': 'Muhammad Alfalah Madukubah',
     'description': """
         Show Subtotal Amount in Group By Product Type
