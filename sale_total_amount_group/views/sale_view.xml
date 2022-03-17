@@ -1,0 +1,24 @@
+<odoo>
+	<record id="sale_order_form_inherit1" model="ir.ui.view">
+		<field name="name">sale.order.form</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view_order_form"/>
+		<field name="arch" type="xml">
+			<field name="amount_untaxed" position="before">
+				<field name="is_consumable_exist" invisible="1" />
+				<field name="is_service_exist" invisible="1" />
+				<field name="is_stockable_exist" invisible="1" />
+				
+				<field name="consumable_amount" widget='monetary' options="{'currency_field': 'currency_id'}" attrs="{
+                                            'invisible': [('is_consumable_exist', '=', False )]
+                                        }" />
+				<field name="service_amount" widget='monetary' options="{'currency_field': 'currency_id'}" attrs="{
+                                            'invisible': [('is_service_exist', '=', False )]
+                                        }" />
+				<field name="stockable_amount" widget='monetary' options="{'currency_field': 'currency_id'}" attrs="{
+                                            'invisible': [('is_stockable_exist', '=', False )]
+                                        }" />
+			</field>
+		</field>
+	</record>
+</odoo>
