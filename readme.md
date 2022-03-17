@@ -8,4 +8,6 @@
 
     for this module, only sale_order.partner_id (res.partner) field can be modified
 
+    for API documentation [API Doc](https://github.com/madukubah/odoo13-odt/blob/master/Test.postman_collection.json)
+
 
