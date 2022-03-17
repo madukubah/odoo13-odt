@@ -146,4 +146,7 @@
 	<record model="ir.actions.act_window" id="sale.action_quotations_with_onboarding">
         <field name='name'>WIP Orders</field>
     </record>
+	<record model="ir.ui.menu" id="sale.menu_sale_quotations">
+		<field name="name">WIP Orders</field>
+	</record>
 </odoo>
